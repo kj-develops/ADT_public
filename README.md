@@ -3,6 +3,7 @@
 ## Lessons learned
 
 Programming language used: C
+
 Knowledge of choices, design and implementation of algorithms and underlying datastructures. Basic knoledge of dynamic datastructures. Searching and sorting. Iteration and recursion.
 
 A basic search engine that can find certain terms/words in a given set of documents and tell the user which documents meets their search requirements. The terms and the Boolean operators used to narrow the search are sent into the abstract data type (ADT), in this case an index that uses a hash map to store the results and connecting files containing the term searched for. The result is ordered to have the most relevant hits on top of the results list.
