@@ -1,4 +1,4 @@
-# INF-1101 Search Engine Application
+# Search Engine Application
 
 ## Lessons learned
 
