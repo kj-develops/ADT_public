@@ -1,0 +1,433 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 26.10      6.84     6.84 143608244     0.00     0.00  compare_results_by_path
+ 18.73     11.76     4.91 214625943     0.00     0.00  skew
+ 13.34     15.25     3.50 18038800     0.00     0.00  insert
+  8.62     17.51     2.26 43417199     0.00     0.00  map_haskey
+  4.24     18.62     1.11   135304     0.01     0.01  set_destroy
+  3.78     19.61     0.99   135304     0.01     0.02  destroy_set_of_results
+  3.74     20.59     0.98 34397799     0.00     0.00  set_contains
+  3.51     21.51     0.92 18038800     0.00     0.00  set_next
+  3.11     22.33     0.82 108116990     0.00     0.00  hash_string
+  2.06     22.87     0.54 43281895     0.00     0.00  map_get
+  1.72     23.32     0.45    20004     0.02     0.03  tokenize_file
+  1.70     23.77     0.45 18038800     0.00     0.00  set_add
+  1.39     24.13     0.37 21417896     0.00     0.00  map_put
+  1.28     24.47     0.34 586287626     0.00     0.00  compare_strings
+  1.07     24.75     0.28 214625943     0.00     0.00  split
+  0.99     25.01     0.26    20004     0.01     1.27  index_addpath
+  0.92     25.25     0.24   119669     0.00     0.02  freebuckets
+  0.84     25.47     0.22        1   220.10   220.18  find_files
+  0.80     25.68     0.21   119668     0.00     0.03  growmap
+  0.65     25.85     0.17 34417803     0.00     0.00  list_popfirst
+  0.50     25.98     0.13 34417803     0.00     0.00  list_addlast
+  0.19     26.03     0.05 18038800     0.00     0.00  addnode
+  0.13     26.06     0.04 18194108     0.00     0.00  set_hasnext
+  0.11     26.09     0.03 21417896     0.00     0.00  newentry
+  0.11     26.12     0.03                             list_addfirst
+  0.11     26.15     0.03                             set_size
+  0.08     26.17     0.02 18038800     0.00     0.00  newnode
+  0.08     26.19     0.02   155308     0.00     0.00  set_createiter
+  0.08     26.21     0.02                             main
+  0.04     26.22     0.01 34417803     0.00     0.00  newnode
+  0.02     26.23     0.01   135304     0.00     0.00  set_destroyiter
+  0.00     26.23     0.00   155308     0.00     0.00  set_create
+  0.00     26.23     0.00    40008     0.00     0.00  concatenate_strings
+  0.00     26.23     0.00    20005     0.00     0.00  list_create
+  0.00     26.23     0.00    20005     0.00     0.00  list_destroy
+  0.00     26.23     0.00    20005     0.00     0.00  list_hasnext
+  0.00     26.23     0.00    20005     0.00     0.00  map_create
+  0.00     26.23     0.00    20004     0.00     0.00  list_next
+  0.00     26.23     0.00    20004     0.00     0.00  list_size
+  0.00     26.23     0.00        1     0.00     0.08  _find_files
+  0.00     26.23     0.00        1     0.00     0.00  http_server
+  0.00     26.23     0.00        1     0.00     0.00  index_create
+  0.00     26.23     0.00        1     0.00     0.02  index_destroy
+  0.00     26.23     0.00        1     0.00     0.00  is_valid_directory
+  0.00     26.23     0.00        1     0.00     0.00  list_createiter
+  0.00     26.23     0.00        1     0.00     0.00  list_destroyiter
+  0.00     26.23     0.00        1     0.00     0.02  map_destroy
+  0.00     26.23     0.00        1     0.00     0.00  open_socket
+  0.00     26.23     0.00        1     0.00     0.00  setup_kill_signals
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.04% of 26.23 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     99.8    0.02   26.15                 main [1]
+                0.26   25.08   20004/20004       index_addpath [2]
+                0.45    0.14   20004/20004       tokenize_file [17]
+                0.22    0.00       1/1           find_files [21]
+                0.00    0.00       1/1           index_destroy [34]
+                0.00    0.00   20005/20005       list_destroy [39]
+                0.00    0.00   20005/20005       list_hasnext [40]
+                0.00    0.00   20004/20004       list_next [42]
+                0.00    0.00   20004/40008       concatenate_strings [37]
+                0.00    0.00   20004/20005       list_create [38]
+                0.00    0.00       1/1           is_valid_directory [46]
+                0.00    0.00       1/1           index_create [45]
+                0.00    0.00       1/1           list_createiter [47]
+                0.00    0.00       1/1           list_destroyiter [48]
+                0.00    0.00       1/1           http_server [44]
+-----------------------------------------------
+                0.26   25.08   20004/20004       main [1]
+[2]     96.6    0.26   25.08   20004         index_addpath [2]
+                0.45   15.72 18038800/18038800     set_add [3]
+                0.58    3.04 9154704/9154704     map_put <cycle 1> [18]
+                2.26    0.36 43417199/43417199     map_haskey [10]
+                0.98    0.15 34397799/34397799     set_contains [12]
+                0.54    0.36 43281895/43281895     map_get [15]
+                0.46    0.00 9019400/18038800     set_next [14]
+                0.17    0.00 34417803/34417803     list_popfirst [22]
+                0.02    0.00 9039404/18194108     set_hasnext [25]
+                0.00    0.00   20004/155308      set_createiter [30]
+                0.00    0.00  155308/155308      set_create [36]
+                0.00    0.00   20004/20004       list_size [43]
+                0.00    0.00   20004/20005       map_create [41]
+-----------------------------------------------
+                0.45   15.72 18038800/18038800     index_addpath [2]
+[3]     61.7    0.45   15.72 18038800         set_add [3]
+                3.50   12.23 18038800/18038800     insert [4]
+-----------------------------------------------
+                             214625943             insert [4]
+                3.50   12.23 18038800/18038800     set_add [3]
+[4]     60.0    3.50   12.23 18038800+214625943 insert [4]
+                6.84    0.08 143608244/143608244     compare_results_by_path [5]
+                4.91    0.00 214625943/214625943     skew [6]
+                0.28    0.00 214625943/214625943     split [20]
+                0.05    0.02 18038800/18038800     addnode [24]
+                0.04    0.00 71017699/586287626     compare_strings [19]
+                             214625943             insert [4]
+-----------------------------------------------
+                6.84    0.08 143608244/143608244     insert [4]
+[5]     26.4    6.84    0.08 143608244         compare_results_by_path [5]
+                0.08    0.00 143608244/586287626     compare_strings [19]
+-----------------------------------------------
+                4.91    0.00 214625943/214625943     insert [4]
+[6]     18.7    4.91    0.00 214625943         skew [6]
+-----------------------------------------------
+[7]     13.8    0.58    3.04 9154704+12382860 <cycle 1 as a whole> [7]
+                0.21    2.84  119668             growmap <cycle 1> [8]
+                0.37    0.20 21417896             map_put <cycle 1> [18]
+-----------------------------------------------
+                              119668             map_put <cycle 1> [18]
+[8]     11.6    0.21    2.84  119668         growmap <cycle 1> [8]
+                0.24    2.60  119668/119669      freebuckets [9]
+                             12263192             map_put <cycle 1> [18]
+-----------------------------------------------
+                0.00    0.00       1/119669      map_destroy [35]
+                0.24    2.60  119668/119669      growmap <cycle 1> [8]
+[9]     10.8    0.24    2.60  119669         freebuckets [9]
+                0.99    1.61  135304/135304      destroy_set_of_results [11]
+-----------------------------------------------
+                2.26    0.36 43417199/43417199     index_addpath [2]
+[10]    10.0    2.26    0.36 43417199         map_haskey [10]
+                0.33    0.00 43417199/108116990     hash_string [16]
+                0.03    0.00 51079184/586287626     compare_strings [19]
+-----------------------------------------------
+                0.99    1.61  135304/135304      freebuckets [9]
+[11]     9.9    0.99    1.61  135304         destroy_set_of_results [11]
+                1.11    0.00  135304/135304      set_destroy [13]
+                0.46    0.00 9019400/18038800     set_next [14]
+                0.02    0.00 9154704/18194108     set_hasnext [25]
+                0.02    0.00  135304/155308      set_createiter [30]
+                0.01    0.00  135304/135304      set_destroyiter [32]
+-----------------------------------------------
+                0.98    0.15 34397799/34397799     index_addpath [2]
+[12]     4.3    0.98    0.15 34397799         set_contains [12]
+                0.15    0.00 254609967/586287626     compare_strings [19]
+-----------------------------------------------
+                1.11    0.00  135304/135304      destroy_set_of_results [11]
+[13]     4.2    1.11    0.00  135304         set_destroy [13]
+-----------------------------------------------
+                0.46    0.00 9019400/18038800     destroy_set_of_results [11]
+                0.46    0.00 9019400/18038800     index_addpath [2]
+[14]     3.5    0.92    0.00 18038800         set_next [14]
+-----------------------------------------------
+                0.54    0.36 43281895/43281895     index_addpath [2]
+[15]     3.4    0.54    0.36 43281895         map_get [15]
+                0.33    0.00 43281895/108116990     hash_string [16]
+                0.03    0.00 56928531/586287626     compare_strings [19]
+-----------------------------------------------
+                0.16    0.00 21417896/108116990     map_put <cycle 1> [18]
+                0.33    0.00 43281895/108116990     map_get [15]
+                0.33    0.00 43417199/108116990     map_haskey [10]
+[16]     3.1    0.82    0.00 108116990         hash_string [16]
+-----------------------------------------------
+                0.45    0.14   20004/20004       main [1]
+[17]     2.3    0.45    0.14   20004         tokenize_file [17]
+                0.13    0.01 34397799/34417803     list_addlast [23]
+-----------------------------------------------
+                             12263192             growmap <cycle 1> [8]
+                0.58    3.04 9154704/9154704     index_addpath [2]
+[18]     2.1    0.37    0.20 21417896         map_put <cycle 1> [18]
+                0.16    0.00 21417896/108116990     hash_string [16]
+                0.03    0.00 21417896/21417896     newentry [26]
+                0.01    0.00 9044001/586287626     compare_strings [19]
+                              119668             growmap <cycle 1> [8]
+-----------------------------------------------
+                0.01    0.00 9044001/586287626     map_put <cycle 1> [18]
+                0.03    0.00 51079184/586287626     map_haskey [10]
+                0.03    0.00 56928531/586287626     map_get [15]
+                0.04    0.00 71017699/586287626     insert [4]
+                0.08    0.00 143608244/586287626     compare_results_by_path [5]
+                0.15    0.00 254609967/586287626     set_contains [12]
+[19]     1.3    0.34    0.00 586287626         compare_strings [19]
+-----------------------------------------------
+                0.28    0.00 214625943/214625943     insert [4]
+[20]     1.1    0.28    0.00 214625943         split [20]
+-----------------------------------------------
+                0.22    0.00       1/1           main [1]
+[21]     0.8    0.22    0.00       1         find_files [21]
+                0.00    0.00       1/1           _find_files [33]
+                0.00    0.00       1/20005       list_create [38]
+-----------------------------------------------
+                0.17    0.00 34417803/34417803     index_addpath [2]
+[22]     0.6    0.17    0.00 34417803         list_popfirst [22]
+-----------------------------------------------
+                0.00    0.00   20004/34417803     _find_files [33]
+                0.13    0.01 34397799/34417803     tokenize_file [17]
+[23]     0.5    0.13    0.01 34417803         list_addlast [23]
+                0.01    0.00 34417803/34417803     newnode [31]
+-----------------------------------------------
+                0.05    0.02 18038800/18038800     insert [4]
+[24]     0.3    0.05    0.02 18038800         addnode [24]
+                0.02    0.00 18038800/18038800     newnode [29]
+-----------------------------------------------
+                0.02    0.00 9039404/18194108     index_addpath [2]
+                0.02    0.00 9154704/18194108     destroy_set_of_results [11]
+[25]     0.1    0.04    0.00 18194108         set_hasnext [25]
+-----------------------------------------------
+                0.03    0.00 21417896/21417896     map_put <cycle 1> [18]
+[26]     0.1    0.03    0.00 21417896         newentry [26]
+-----------------------------------------------
+                                                 <spontaneous>
+[27]     0.1    0.03    0.00                 list_addfirst [27]
+-----------------------------------------------
+                                                 <spontaneous>
+[28]     0.1    0.03    0.00                 set_size [28]
+-----------------------------------------------
+                0.02    0.00 18038800/18038800     addnode [24]
+[29]     0.1    0.02    0.00 18038800         newnode [29]
+-----------------------------------------------
+                0.00    0.00   20004/155308      index_addpath [2]
+                0.02    0.00  135304/155308      destroy_set_of_results [11]
+[30]     0.1    0.02    0.00  155308         set_createiter [30]
+-----------------------------------------------
+                0.01    0.00 34417803/34417803     list_addlast [23]
+[31]     0.0    0.01    0.00 34417803         newnode [31]
+-----------------------------------------------
+                0.01    0.00  135304/135304      destroy_set_of_results [11]
+[32]     0.0    0.01    0.00  135304         set_destroyiter [32]
+-----------------------------------------------
+                0.00    0.00       1/1           find_files [21]
+[33]     0.0    0.00    0.00       1         _find_files [33]
+                0.00    0.00   20004/34417803     list_addlast [23]
+                0.00    0.00   20004/40008       concatenate_strings [37]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[34]     0.0    0.00    0.00       1         index_destroy [34]
+                0.00    0.00       1/1           map_destroy [35]
+-----------------------------------------------
+                0.00    0.00       1/1           index_destroy [34]
+[35]     0.0    0.00    0.00       1         map_destroy [35]
+                0.00    0.00       1/119669      freebuckets [9]
+-----------------------------------------------
+                0.00    0.00  155308/155308      index_addpath [2]
+[36]     0.0    0.00    0.00  155308         set_create [36]
+-----------------------------------------------
+                0.00    0.00   20004/40008       main [1]
+                0.00    0.00   20004/40008       _find_files [33]
+[37]     0.0    0.00    0.00   40008         concatenate_strings [37]
+-----------------------------------------------
+                0.00    0.00       1/20005       find_files [21]
+                0.00    0.00   20004/20005       main [1]
+[38]     0.0    0.00    0.00   20005         list_create [38]
+-----------------------------------------------
+                0.00    0.00   20005/20005       main [1]
+[39]     0.0    0.00    0.00   20005         list_destroy [39]
+-----------------------------------------------
+                0.00    0.00   20005/20005       main [1]
+[40]     0.0    0.00    0.00   20005         list_hasnext [40]
+-----------------------------------------------
+                0.00    0.00       1/20005       index_create [45]
+                0.00    0.00   20004/20005       index_addpath [2]
+[41]     0.0    0.00    0.00   20005         map_create [41]
+-----------------------------------------------
+                0.00    0.00   20004/20004       main [1]
+[42]     0.0    0.00    0.00   20004         list_next [42]
+-----------------------------------------------
+                0.00    0.00   20004/20004       index_addpath [2]
+[43]     0.0    0.00    0.00   20004         list_size [43]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[44]     0.0    0.00    0.00       1         http_server [44]
+                0.00    0.00       1/1           setup_kill_signals [50]
+                0.00    0.00       1/1           open_socket [49]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[45]     0.0    0.00    0.00       1         index_create [45]
+                0.00    0.00       1/20005       map_create [41]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[46]     0.0    0.00    0.00       1         is_valid_directory [46]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[47]     0.0    0.00    0.00       1         list_createiter [47]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[48]     0.0    0.00    0.00       1         list_destroyiter [48]
+-----------------------------------------------
+                0.00    0.00       1/1           http_server [44]
+[49]     0.0    0.00    0.00       1         open_socket [49]
+-----------------------------------------------
+                0.00    0.00       1/1           http_server [44]
+[50]     0.0    0.00    0.00       1         setup_kill_signals [50]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [33] _find_files (common.c) [23] list_addlast           [29] newnode (aatreeset.c)
+  [24] addnode (aatreeset.c)  [38] list_create            [49] open_socket
+   [5] compare_results_by_path [47] list_createiter        [3] set_add
+  [19] compare_strings        [39] list_destroy           [12] set_contains
+  [37] concatenate_strings    [48] list_destroyiter       [36] set_create
+  [11] destroy_set_of_results [40] list_hasnext           [30] set_createiter
+  [21] find_files             [42] list_next              [13] set_destroy
+   [9] freebuckets (hashmap.c) [22] list_popfirst         [32] set_destroyiter
+   [8] growmap (hashmap.c)    [43] list_size              [25] set_hasnext
+  [16] hash_string             [1] main                   [14] set_next
+  [44] http_server            [41] map_create             [28] set_size
+   [2] index_addpath          [35] map_destroy            [50] setup_kill_signals
+  [45] index_create           [15] map_get                 [6] skew (aatreeset.c)
+  [34] index_destroy          [10] map_haskey             [20] split (aatreeset.c)
+   [4] insert (aatreeset.c)   [18] map_put                [17] tokenize_file
+  [46] is_valid_directory     [26] newentry (hashmap.c)    [7] <cycle 1>
+  [27] list_addfirst          [31] newnode (linkedlist.c)

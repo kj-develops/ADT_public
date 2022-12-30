@@ -1,0 +1,862 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 25.62      0.63     0.63 10988971     0.00     0.00  compare_results_by_path
+ 18.30      1.08     0.45 18836867     0.00     0.00  skew
+ 14.64      1.44     0.36  1956844     0.00     0.00  insert
+  9.76      1.68     0.24  5065870     0.00     0.00  map_haskey
+  5.69      1.82     0.14  1956845     0.00     0.00  set_next
+  3.66      1.91     0.09  4087983     0.00     0.00  set_contains
+  2.85      1.98     0.07    28825     0.00     0.01  destroy_set_of_results
+  2.85      2.05     0.07     2014     0.03     1.17  index_addpath
+  2.44      2.11     0.06  5037040     0.00     0.00  map_get
+  2.44      2.17     0.06     2014     0.03     0.03  tokenize_file
+  2.24      2.23     0.06 12461373     0.00     0.00  hash_string
+  1.22      2.26     0.03  4090386     0.00     0.00  list_popfirst
+  1.22      2.29     0.03  2358463     0.00     0.00  map_put
+  1.22      2.32     0.03  1957233     0.00     0.00  newnode
+  1.22      2.35     0.03  1956844     0.00     0.00  set_add
+  1.22      2.38     0.03        1    30.01    30.02  find_files
+  0.81      2.40     0.02    28826     0.00     0.00  set_destroy
+  0.61      2.41     0.02 62473449     0.00     0.00  compare_strings
+  0.41      2.42     0.01 18836867     0.00     0.00  split
+  0.41      2.43     0.01  4090429     0.00     0.00  list_addlast
+  0.41      2.44     0.01  1987695     0.00     0.00  set_hasnext
+  0.41      2.45     0.01    12241     0.00     0.01  freebuckets
+  0.41      2.46     0.01        1    10.00    10.00  list_addfirst
+  0.00      2.46     0.00  4090430     0.00     0.00  newnode
+  0.00      2.46     0.00  2358463     0.00     0.00  newentry
+  0.00      2.46     0.00  1956844     0.00     0.00  addnode
+  0.00      2.46     0.00    30858     0.00     0.00  set_create
+  0.00      2.46     0.00    30850     0.00     0.00  set_createiter
+  0.00      2.46     0.00    28836     0.00     0.00  set_destroyiter
+  0.00      2.46     0.00    12228     0.00     0.01  growmap
+  0.00      2.46     0.00     4028     0.00     0.00  concatenate_strings
+  0.00      2.46     0.00     2091     0.00     0.00  list_hasnext
+  0.00      2.46     0.00     2081     0.00     0.00  list_next
+  0.00      2.46     0.00     2029     0.00     0.00  list_create
+  0.00      2.46     0.00     2029     0.00     0.00  list_destroy
+  0.00      2.46     0.00     2027     0.00     0.00  map_create
+  0.00      2.46     0.00     2026     0.00     0.00  list_size
+  0.00      2.46     0.00      197     0.00     0.00  newstring
+  0.00      2.46     0.00      160     0.00     0.00  stripstring
+  0.00      2.46     0.00       96     0.00     0.00  is_reserved_char
+  0.00      2.46     0.00       80     0.00     0.00  splitstring
+  0.00      2.46     0.00       30     0.00     0.00  is_reserved_word
+  0.00      2.46     0.00       24     0.00     0.00  list_peek
+  0.00      2.46     0.00       19     0.00     0.00  newnode
+  0.00      2.46     0.00       16     0.00     0.00  substring
+  0.00      2.46     0.00       13     0.00     0.01  map_destroy
+  0.00      2.46     0.00       12     0.00     0.00  parse_term
+  0.00      2.46     0.00       10     0.00     0.09  get_documents_for_term
+  0.00      2.46     0.00       10     0.00     0.00  set_size
+  0.00      2.46     0.00        9     0.00     0.00  buildset
+  0.00      2.46     0.00        9     0.00     0.00  buildtree
+  0.00      2.46     0.00        9     0.00     0.00  parse_orterm
+  0.00      2.46     0.00        8     0.00     0.00  hexdigit
+  0.00      2.46     0.00        8     0.00     0.00  urldecode
+  0.00      2.46     0.00        6     0.00     1.84  http_handler
+  0.00      2.46     0.00        6     0.00     0.00  http_ok
+  0.00      2.46     0.00        6     0.00     0.00  http_open_file_streams
+  0.00      2.46     0.00        6     0.00     0.00  http_parse_request
+  0.00      2.46     0.00        6     0.00     0.00  http_parse_request_headers
+  0.00      2.46     0.00        6     0.00     0.00  http_parse_request_line
+  0.00      2.46     0.00        6     0.00     0.00  list_createiter
+  0.00      2.46     0.00        6     0.00     0.00  parse_andterm
+  0.00      2.46     0.00        5     0.00     0.00  list_destroyiter
+  0.00      2.46     0.00        4     0.00     0.00  get_mime_type
+  0.00      2.46     0.00        4     0.00     0.00  handle_page
+  0.00      2.46     0.00        4     0.00     0.00  html_escape
+  0.00      2.46     0.00        4     0.00     0.00  is_valid_file
+  0.00      2.46     0.00        4     0.00     0.00  print_title
+  0.00      2.46     0.00        3     0.00     0.00  parse_query
+  0.00      2.46     0.00        3     0.00     0.00  set_difference
+  0.00      2.46     0.00        3     0.00     0.02  set_intersection
+  0.00      2.46     0.00        3     0.00     0.00  set_union
+  0.00      2.46     0.00        2     0.00     5.51  handle_query
+  0.00      2.46     0.00        2     0.00     5.51  parse_html_template
+  0.00      2.46     0.00        2     0.00     0.00  preprocess_query
+  0.00      2.46     0.00        2     0.00     0.00  print_querystring
+  0.00      2.46     0.00        2     0.00     5.51  run_query
+  0.00      2.46     0.00        2     0.00     0.00  tokenize_query
+  0.00      2.46     0.00        1     0.00     0.00  _find_files
+  0.00      2.46     0.00        1     0.00     1.02  evaluate
+  0.00      2.46     0.00        1     0.00     0.00  http_parse_query
+  0.00      2.46     0.00        1     0.00     0.00  http_server
+  0.00      2.46     0.00        1     0.00     0.00  index_create
+  0.00      2.46     0.00        1     0.00     0.01  index_destroy
+  0.00      2.46     0.00        1     0.00    11.03  index_query
+  0.00      2.46     0.00        1     0.00     0.00  is_valid_directory
+  0.00      2.46     0.00        1     0.00     0.00  list_sort
+  0.00      2.46     0.00        1     0.00     0.00  mergesort_
+  0.00      2.46     0.00        1     0.00     0.00  open_socket
+  0.00      2.46     0.00        1     0.00     0.00  parse
+  0.00      2.46     0.00        1     0.00     0.00  send_results
+  0.00      2.46     0.00        1     0.00     0.00  setup_kill_signals
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.41% of 2.46 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     99.5    0.00    2.45                 main [1]
+                0.07    2.28    2014/2014        index_addpath [2]
+                0.06    0.01    2014/2014        tokenize_file [15]
+                0.03    0.00       1/1           find_files [18]
+                0.00    0.00       1/1           index_destroy [40]
+                0.00    0.00    2015/2029        list_destroy [64]
+                0.00    0.00    2015/2091        list_hasnext [61]
+                0.00    0.00    2014/2081        list_next [62]
+                0.00    0.00    2014/4028        concatenate_strings [60]
+                0.00    0.00    2014/2029        list_create [63]
+                0.00    0.00       1/1           is_valid_directory [91]
+                0.00    0.00       1/1           index_create [90]
+                0.00    0.00       1/6           list_createiter [81]
+                0.00    0.00       1/5           list_destroyiter [82]
+                0.00    0.00       1/1           http_server [89]
+-----------------------------------------------
+                0.07    2.28    2014/2014        main [1]
+[2]     95.5    0.07    2.28    2014         index_addpath [2]
+                0.03    1.48 1955740/1956844     set_add [3]
+                0.24    0.02 5065853/5065870     map_haskey [7]
+                0.03    0.19 1006695/1006775     map_put <cycle 1> [17]
+                0.09    0.01 4087983/4087983     set_contains [13]
+                0.06    0.02 5037028/5037040     map_get [14]
+                0.07    0.00  977870/1956845     set_next [12]
+                0.03    0.00 4089997/4090386     list_popfirst [19]
+                0.00    0.00  979884/1987695     set_hasnext [32]
+                0.00    0.00   30839/30858       set_create [57]
+                0.00    0.00    2014/2026        list_size [66]
+                0.00    0.00    2014/2027        map_create [65]
+                0.00    0.00    2014/30850       set_createiter [58]
+-----------------------------------------------
+                0.00    0.00    1104/1956844     get_documents_for_term [35]
+                0.03    1.48 1955740/1956844     index_addpath [2]
+[3]     61.6    0.03    1.49 1956844         set_add [3]
+                0.36    1.12 1956844/1956844     insert [4]
+-----------------------------------------------
+                             18836867             insert [4]
+                0.36    1.12 1956844/1956844     set_add [3]
+[4]     60.3    0.36    1.12 1956844+18836867 insert [4]
+                0.63    0.00 10987731/10988971     compare_results_by_path [5]
+                0.45    0.00 18836867/18836867     skew [6]
+                0.00    0.03 1956844/1956844     addnode [21]
+                0.01    0.00 18836867/18836867     split [30]
+                0.00    0.00 7849136/62473449     compare_strings [23]
+                             18836867             insert [4]
+-----------------------------------------------
+                0.00    0.00     152/10988971     set_difference [42]
+                0.00    0.00     164/10988971     set_union [41]
+                0.00    0.00     924/10988971     set_intersection [37]
+                0.63    0.00 10987731/10988971     insert [4]
+[5]     25.7    0.63    0.00 10988971         compare_results_by_path [5]
+                0.00    0.00 10988971/62473449     compare_strings [23]
+-----------------------------------------------
+                0.45    0.00 18836867/18836867     insert [4]
+[6]     18.3    0.45    0.00 18836867         skew [6]
+-----------------------------------------------
+                0.00    0.00       1/5065870     http_parse_request [38]
+                0.00    0.00       6/5065870     http_handler [25]
+                0.00    0.00      10/5065870     get_documents_for_term [35]
+                0.24    0.02 5065853/5065870     index_addpath [2]
+[7]     10.7    0.24    0.02 5065870         map_haskey [7]
+                0.02    0.00 5065870/12461373     hash_string [16]
+                0.00    0.00 5916881/62473449     compare_strings [23]
+-----------------------------------------------
+[8]      8.8    0.03    0.19 1006775+1363916 <cycle 1 as a whole> [8]
+                0.00    0.17   12228             growmap <cycle 1> [10]
+                0.03    0.01 2358463             map_put <cycle 1> [17]
+-----------------------------------------------
+                0.00    0.00      13/12241       map_destroy [36]
+                0.01    0.16   12228/12241       growmap <cycle 1> [10]
+[9]      7.1    0.01    0.17   12241         freebuckets [9]
+                0.07    0.10   28825/28825       destroy_set_of_results [11]
+-----------------------------------------------
+                               12228             map_put <cycle 1> [17]
+[10]     7.1    0.00    0.17   12228         growmap <cycle 1> [10]
+                0.01    0.16   12228/12241       freebuckets [9]
+                             1351688             map_put <cycle 1> [17]
+-----------------------------------------------
+                0.07    0.10   28825/28825       freebuckets [9]
+[11]     6.7    0.07    0.10   28825         destroy_set_of_results [11]
+                0.07    0.00  977870/1956845     set_next [12]
+                0.02    0.00   28825/28826       set_destroy [22]
+                0.01    0.00 1006695/1987695     set_hasnext [32]
+                0.00    0.00   28825/30850       set_createiter [58]
+                0.00    0.00   28825/28836       set_destroyiter [59]
+-----------------------------------------------
+                0.00    0.00       1/1956845     index_query [29]
+                0.00    0.00    1104/1956845     get_documents_for_term [35]
+                0.07    0.00  977870/1956845     destroy_set_of_results [11]
+                0.07    0.00  977870/1956845     index_addpath [2]
+[12]     5.7    0.14    0.00 1956845         set_next [12]
+-----------------------------------------------
+                0.09    0.01 4087983/4087983     index_addpath [2]
+[13]     4.0    0.09    0.01 4087983         set_contains [13]
+                0.01    0.00 30164258/62473449     compare_strings [23]
+-----------------------------------------------
+                0.00    0.00       1/5037040     http_handler [25]
+                0.00    0.00       1/5037040     http_parse_request [38]
+                0.00    0.00      10/5037040     get_documents_for_term [35]
+                0.06    0.02 5037028/5037040     index_addpath [2]
+[14]     3.4    0.06    0.02 5037040         map_get [14]
+                0.02    0.00 5037040/12461373     hash_string [16]
+                0.00    0.00 6542542/62473449     compare_strings [23]
+-----------------------------------------------
+                0.06    0.01    2014/2014        main [1]
+[15]     2.8    0.06    0.01    2014         tokenize_file [15]
+                0.01    0.00 4087983/4090429     list_addlast [31]
+-----------------------------------------------
+                0.01    0.00 2358463/12461373     map_put <cycle 1> [17]
+                0.02    0.00 5037040/12461373     map_get [14]
+                0.02    0.00 5065870/12461373     map_haskey [7]
+[16]     2.2    0.06    0.00 12461373         hash_string [16]
+-----------------------------------------------
+                             1351688             growmap <cycle 1> [10]
+                0.00    0.00       1/1006775     http_parse_query [46]
+                0.00    0.00      79/1006775     http_parse_request_headers [39]
+                0.03    0.19 1006695/1006775     index_addpath [2]
+[17]     1.7    0.03    0.01 2358463         map_put <cycle 1> [17]
+                0.01    0.00 2358463/12461373     hash_string [16]
+                0.00    0.00 1011623/62473449     compare_strings [23]
+                0.00    0.00 2358463/2358463     newentry [56]
+                               12228             growmap <cycle 1> [10]
+-----------------------------------------------
+                0.03    0.00       1/1           main [1]
+[18]     1.2    0.03    0.00       1         find_files [18]
+                0.00    0.00       1/1           _find_files [45]
+                0.00    0.00       1/2029        list_create [63]
+-----------------------------------------------
+                0.00    0.00     389/4090386     buildtree [44]
+                0.03    0.00 4089997/4090386     index_addpath [2]
+[19]     1.2    0.03    0.00 4090386         list_popfirst [19]
+-----------------------------------------------
+                0.00    0.00     389/1957233     buildtree [44]
+                0.03    0.00 1956844/1957233     addnode [21]
+[20]     1.2    0.03    0.00 1957233         newnode [20]
+-----------------------------------------------
+                0.00    0.03 1956844/1956844     insert [4]
+[21]     1.2    0.00    0.03 1956844         addnode [21]
+                0.03    0.00 1956844/1957233     newnode [20]
+-----------------------------------------------
+                0.00    0.00       1/28826       index_query [29]
+                0.02    0.00   28825/28826       destroy_set_of_results [11]
+[22]     0.8    0.02    0.00   28826         set_destroy [22]
+-----------------------------------------------
+                0.00    0.00       5/62473449     parse_query <cycle 2> [54]
+                0.00    0.00       8/62473449     parse_andterm <cycle 2> [53]
+                0.00    0.00      11/62473449     parse_orterm <cycle 2> [52]
+                0.00    0.00      14/62473449     parse_term <cycle 2> [51]
+                0.00    0.00 1011623/62473449     map_put <cycle 1> [17]
+                0.00    0.00 5916881/62473449     map_haskey [7]
+                0.00    0.00 6542542/62473449     map_get [14]
+                0.00    0.00 7849136/62473449     insert [4]
+                0.00    0.00 10988971/62473449     compare_results_by_path [5]
+                0.01    0.00 30164258/62473449     set_contains [13]
+[23]     0.6    0.02    0.00 62473449         compare_strings [23]
+-----------------------------------------------
+                                                 <spontaneous>
+[24]     0.5    0.00    0.01                 handle_request [24]
+                0.00    0.01       6/6           http_handler [25]
+                0.00    0.00      12/13          map_destroy [36]
+                0.00    0.00       6/6           http_parse_request [38]
+                0.00    0.00       6/6           http_open_file_streams [79]
+                0.00    0.00       6/8           urldecode [77]
+-----------------------------------------------
+                0.00    0.01       6/6           handle_request [24]
+[25]     0.4    0.00    0.01       6         http_handler [25]
+                0.00    0.01       2/2           handle_query [26]
+                0.00    0.00       6/5065870     map_haskey [7]
+                0.00    0.00       1/5037040     map_get [14]
+                0.00    0.00       4/4           handle_page [84]
+-----------------------------------------------
+                0.00    0.01       2/2           http_handler [25]
+[26]     0.4    0.00    0.01       2         handle_query [26]
+                0.00    0.01       2/2           parse_html_template [27]
+                0.00    0.00       2/6           http_ok [78]
+-----------------------------------------------
+                0.00    0.01       2/2           handle_query [26]
+[27]     0.4    0.00    0.01       2         parse_html_template [27]
+                0.00    0.01       2/2           run_query [28]
+                0.00    0.00       4/4           print_title [87]
+                0.00    0.00       2/2           print_querystring [88]
+-----------------------------------------------
+                0.00    0.01       2/2           parse_html_template [27]
+[28]     0.4    0.00    0.01       2         run_query [28]
+                0.00    0.01       1/1           index_query [29]
+                0.00    0.00       2/2           preprocess_query [47]
+                0.00    0.00      24/2091        list_hasnext [61]
+                0.00    0.00      23/2081        list_next [62]
+                0.00    0.00       3/2029        list_destroy [64]
+                0.00    0.00       2/2026        list_size [66]
+                0.00    0.00       1/1           send_results [95]
+                0.00    0.00       1/6           list_createiter [81]
+                0.00    0.00       1/5           list_destroyiter [82]
+-----------------------------------------------
+                0.00    0.01       1/1           run_query [28]
+[29]     0.4    0.00    0.01       1         index_query [29]
+                0.01    0.00       1/1           list_addfirst [33]
+                0.00    0.00       1/1           evaluate [34]
+                0.00    0.00       1/28826       set_destroy [22]
+                0.00    0.00       1/1956845     set_next [12]
+                0.00    0.00       2/1987695     set_hasnext [32]
+                0.00    0.00       1/1           parse [50]
+                0.00    0.00       1/2029        list_create [63]
+                0.00    0.00       1/30850       set_createiter [58]
+                0.00    0.00       1/28836       set_destroyiter [59]
+                0.00    0.00       1/1           list_sort [92]
+-----------------------------------------------
+                0.01    0.00 18836867/18836867     insert [4]
+[30]     0.4    0.01    0.00 18836867         split [30]
+-----------------------------------------------
+                0.00    0.00      20/4090429     tokenize_query [48]
+                0.00    0.00      23/4090429     preprocess_query [47]
+                0.00    0.00      76/4090429     set_difference [42]
+                0.00    0.00     102/4090429     set_intersection [37]
+                0.00    0.00     211/4090429     set_union [41]
+                0.00    0.00    2014/4090429     _find_files [45]
+                0.01    0.00 4087983/4090429     tokenize_file [15]
+[31]     0.4    0.01    0.00 4090429         list_addlast [31]
+                0.00    0.00 4090429/4090430     newnode [55]
+-----------------------------------------------
+                0.00    0.00       2/1987695     index_query [29]
+                0.00    0.00    1114/1987695     get_documents_for_term [35]
+                0.00    0.00  979884/1987695     index_addpath [2]
+                0.01    0.00 1006695/1987695     destroy_set_of_results [11]
+[32]     0.4    0.01    0.00 1987695         set_hasnext [32]
+-----------------------------------------------
+                0.01    0.00       1/1           index_query [29]
+[33]     0.4    0.01    0.00       1         list_addfirst [33]
+                0.00    0.00       1/4090430     newnode [55]
+-----------------------------------------------
+                                  18             evaluate [34]
+                0.00    0.00       1/1           index_query [29]
+[34]     0.0    0.00    0.00       1+18      evaluate [34]
+                0.00    0.00      10/10          get_documents_for_term [35]
+                0.00    0.00       3/3           set_intersection [37]
+                0.00    0.00       3/3           set_union [41]
+                0.00    0.00       3/3           set_difference [42]
+                                  18             evaluate [34]
+-----------------------------------------------
+                0.00    0.00      10/10          evaluate [34]
+[35]     0.0    0.00    0.00      10         get_documents_for_term [35]
+                0.00    0.00    1104/1956844     set_add [3]
+                0.00    0.00    1104/1956845     set_next [12]
+                0.00    0.00    1114/1987695     set_hasnext [32]
+                0.00    0.00      10/5065870     map_haskey [7]
+                0.00    0.00      10/5037040     map_get [14]
+                0.00    0.00      10/30858       set_create [57]
+                0.00    0.00      10/10          set_size [75]
+                0.00    0.00      10/30850       set_createiter [58]
+                0.00    0.00      10/28836       set_destroyiter [59]
+-----------------------------------------------
+                0.00    0.00       1/13          index_destroy [40]
+                0.00    0.00      12/13          handle_request [24]
+[36]     0.0    0.00    0.00      13         map_destroy [36]
+                0.00    0.00      13/12241       freebuckets [9]
+-----------------------------------------------
+                0.00    0.00       3/3           evaluate [34]
+[37]     0.0    0.00    0.00       3         set_intersection [37]
+                0.00    0.00     924/10988971     compare_results_by_path [5]
+                0.00    0.00       3/9           buildset [43]
+                0.00    0.00     102/4090429     list_addlast [31]
+                0.00    0.00       3/2029        list_create [63]
+-----------------------------------------------
+                0.00    0.00       6/6           handle_request [24]
+[38]     0.0    0.00    0.00       6         http_parse_request [38]
+                0.00    0.00       6/6           http_parse_request_headers [39]
+                0.00    0.00       1/1           http_parse_query [46]
+                0.00    0.00       1/5065870     map_haskey [7]
+                0.00    0.00       1/5037040     map_get [14]
+                0.00    0.00      12/2027        map_create [65]
+                0.00    0.00       6/6           http_parse_request_line [80]
+                0.00    0.00       1/197         newstring [67]
+-----------------------------------------------
+                0.00    0.00       6/6           http_parse_request [38]
+[39]     0.0    0.00    0.00       6         http_parse_request_headers [39]
+                0.00    0.00      79/1006775     map_put <cycle 1> [17]
+                0.00    0.00      79/80          splitstring [70]
+                0.00    0.00       6/197         newstring [67]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[40]     0.0    0.00    0.00       1         index_destroy [40]
+                0.00    0.00       1/13          map_destroy [36]
+-----------------------------------------------
+                0.00    0.00       3/3           evaluate [34]
+[41]     0.0    0.00    0.00       3         set_union [41]
+                0.00    0.00     164/10988971     compare_results_by_path [5]
+                0.00    0.00       3/9           buildset [43]
+                0.00    0.00     211/4090429     list_addlast [31]
+                0.00    0.00       3/2029        list_create [63]
+-----------------------------------------------
+                0.00    0.00       3/3           evaluate [34]
+[42]     0.0    0.00    0.00       3         set_difference [42]
+                0.00    0.00     152/10988971     compare_results_by_path [5]
+                0.00    0.00       3/9           buildset [43]
+                0.00    0.00      76/4090429     list_addlast [31]
+                0.00    0.00       3/2029        list_create [63]
+-----------------------------------------------
+                0.00    0.00       3/9           set_union [41]
+                0.00    0.00       3/9           set_intersection [37]
+                0.00    0.00       3/9           set_difference [42]
+[43]     0.0    0.00    0.00       9         buildset [43]
+                0.00    0.00       9/9           buildtree [44]
+                0.00    0.00       9/30858       set_create [57]
+                0.00    0.00       9/2026        list_size [66]
+                0.00    0.00       9/2029        list_destroy [64]
+-----------------------------------------------
+                                 302             buildtree [44]
+                0.00    0.00       9/9           buildset [43]
+[44]     0.0    0.00    0.00       9+302     buildtree [44]
+                0.00    0.00     389/1957233     newnode [20]
+                0.00    0.00     389/4090386     list_popfirst [19]
+                                 302             buildtree [44]
+-----------------------------------------------
+                0.00    0.00       1/1           find_files [18]
+[45]     0.0    0.00    0.00       1         _find_files [45]
+                0.00    0.00    2014/4090429     list_addlast [31]
+                0.00    0.00    2014/4028        concatenate_strings [60]
+-----------------------------------------------
+                0.00    0.00       1/1           http_parse_request [38]
+[46]     0.0    0.00    0.00       1         http_parse_query [46]
+                0.00    0.00       1/1006775     map_put <cycle 1> [17]
+                0.00    0.00       2/8           urldecode [77]
+                0.00    0.00       1/80          splitstring [70]
+-----------------------------------------------
+                0.00    0.00       2/2           run_query [28]
+[47]     0.0    0.00    0.00       2         preprocess_query [47]
+                0.00    0.00      23/4090429     list_addlast [31]
+                0.00    0.00       2/2           tokenize_query [48]
+                0.00    0.00      30/30          is_reserved_word [71]
+                0.00    0.00      22/2091        list_hasnext [61]
+                0.00    0.00      20/2081        list_next [62]
+                0.00    0.00       2/2029        list_create [63]
+                0.00    0.00       2/6           list_createiter [81]
+                0.00    0.00       2/5           list_destroyiter [82]
+                0.00    0.00       2/2029        list_destroy [64]
+-----------------------------------------------
+                0.00    0.00       2/2           preprocess_query [47]
+[48]     0.0    0.00    0.00       2         tokenize_query [48]
+                0.00    0.00      20/4090429     list_addlast [31]
+                0.00    0.00      96/96          is_reserved_char [69]
+                0.00    0.00      16/16          substring [74]
+                0.00    0.00       2/2029        list_create [63]
+-----------------------------------------------
+[49]     0.0    0.00    0.00       1+29      <cycle 2 as a whole> [49]
+                0.00    0.00      12             parse_term <cycle 2> [51]
+                0.00    0.00       9+3           parse_orterm <cycle 2> [52]
+                0.00    0.00       6+3           parse_andterm <cycle 2> [53]
+                0.00    0.00       3+3           parse_query <cycle 2> [54]
+-----------------------------------------------
+                0.00    0.00       1/1           index_query [29]
+[50]     0.0    0.00    0.00       1         parse [50]
+                0.00    0.00       1/1           parse_query <cycle 2> [54]
+                0.00    0.00       1/6           list_createiter [81]
+                0.00    0.00       1/2091        list_hasnext [61]
+-----------------------------------------------
+                                  12             parse_orterm <cycle 2> [52]
+[51]     0.0    0.00    0.00      12         parse_term <cycle 2> [51]
+                0.00    0.00      14/62473449     compare_strings [23]
+                0.00    0.00      14/2081        list_next [62]
+                0.00    0.00      10/19          newnode [73]
+                                   2             parse_query <cycle 2> [54]
+-----------------------------------------------
+                                   3             parse_orterm <cycle 2> [52]
+                                   9             parse_andterm <cycle 2> [53]
+[52]     0.0    0.00    0.00       9+3       parse_orterm <cycle 2> [52]
+                0.00    0.00      11/62473449     compare_strings [23]
+                0.00    0.00      12/2091        list_hasnext [61]
+                0.00    0.00      11/24          list_peek [72]
+                0.00    0.00       3/2081        list_next [62]
+                0.00    0.00       3/19          newnode [73]
+                                  12             parse_term <cycle 2> [51]
+                                   3             parse_orterm <cycle 2> [52]
+-----------------------------------------------
+                                   3             parse_andterm <cycle 2> [53]
+                                   6             parse_query <cycle 2> [54]
+[53]     0.0    0.00    0.00       6+3       parse_andterm <cycle 2> [53]
+                0.00    0.00       8/62473449     compare_strings [23]
+                0.00    0.00       9/2091        list_hasnext [61]
+                0.00    0.00       8/24          list_peek [72]
+                0.00    0.00       3/2081        list_next [62]
+                0.00    0.00       3/19          newnode [73]
+                                   9             parse_orterm <cycle 2> [52]
+                                   3             parse_andterm <cycle 2> [53]
+-----------------------------------------------
+                                   3             parse_query <cycle 2> [54]
+                                   2             parse_term <cycle 2> [51]
+                0.00    0.00       1/1           parse [50]
+[54]     0.0    0.00    0.00       3+3       parse_query <cycle 2> [54]
+                0.00    0.00       5/62473449     compare_strings [23]
+                0.00    0.00       6/2091        list_hasnext [61]
+                0.00    0.00       5/24          list_peek [72]
+                0.00    0.00       3/2081        list_next [62]
+                0.00    0.00       3/19          newnode [73]
+                                   6             parse_andterm <cycle 2> [53]
+                                   3             parse_query <cycle 2> [54]
+-----------------------------------------------
+                0.00    0.00       1/4090430     list_addfirst [33]
+                0.00    0.00 4090429/4090430     list_addlast [31]
+[55]     0.0    0.00    0.00 4090430         newnode [55]
+-----------------------------------------------
+                0.00    0.00 2358463/2358463     map_put <cycle 1> [17]
+[56]     0.0    0.00    0.00 2358463         newentry [56]
+-----------------------------------------------
+                0.00    0.00       9/30858       buildset [43]
+                0.00    0.00      10/30858       get_documents_for_term [35]
+                0.00    0.00   30839/30858       index_addpath [2]
+[57]     0.0    0.00    0.00   30858         set_create [57]
+-----------------------------------------------
+                0.00    0.00       1/30850       index_query [29]
+                0.00    0.00      10/30850       get_documents_for_term [35]
+                0.00    0.00    2014/30850       index_addpath [2]
+                0.00    0.00   28825/30850       destroy_set_of_results [11]
+[58]     0.0    0.00    0.00   30850         set_createiter [58]
+-----------------------------------------------
+                0.00    0.00       1/28836       index_query [29]
+                0.00    0.00      10/28836       get_documents_for_term [35]
+                0.00    0.00   28825/28836       destroy_set_of_results [11]
+[59]     0.0    0.00    0.00   28836         set_destroyiter [59]
+-----------------------------------------------
+                0.00    0.00    2014/4028        main [1]
+                0.00    0.00    2014/4028        _find_files [45]
+[60]     0.0    0.00    0.00    4028         concatenate_strings [60]
+-----------------------------------------------
+                0.00    0.00       1/2091        parse [50]
+                0.00    0.00       2/2091        send_results [95]
+                0.00    0.00       6/2091        parse_query <cycle 2> [54]
+                0.00    0.00       9/2091        parse_andterm <cycle 2> [53]
+                0.00    0.00      12/2091        parse_orterm <cycle 2> [52]
+                0.00    0.00      22/2091        preprocess_query [47]
+                0.00    0.00      24/2091        run_query [28]
+                0.00    0.00    2015/2091        main [1]
+[61]     0.0    0.00    0.00    2091         list_hasnext [61]
+-----------------------------------------------
+                0.00    0.00       1/2081        send_results [95]
+                0.00    0.00       3/2081        parse_query <cycle 2> [54]
+                0.00    0.00       3/2081        parse_andterm <cycle 2> [53]
+                0.00    0.00       3/2081        parse_orterm <cycle 2> [52]
+                0.00    0.00      14/2081        parse_term <cycle 2> [51]
+                0.00    0.00      20/2081        preprocess_query [47]
+                0.00    0.00      23/2081        run_query [28]
+                0.00    0.00    2014/2081        main [1]
+[62]     0.0    0.00    0.00    2081         list_next [62]
+-----------------------------------------------
+                0.00    0.00       1/2029        find_files [18]
+                0.00    0.00       1/2029        index_query [29]
+                0.00    0.00       2/2029        tokenize_query [48]
+                0.00    0.00       2/2029        preprocess_query [47]
+                0.00    0.00       3/2029        set_union [41]
+                0.00    0.00       3/2029        set_intersection [37]
+                0.00    0.00       3/2029        set_difference [42]
+                0.00    0.00    2014/2029        main [1]
+[63]     0.0    0.00    0.00    2029         list_create [63]
+-----------------------------------------------
+                0.00    0.00       2/2029        preprocess_query [47]
+                0.00    0.00       3/2029        run_query [28]
+                0.00    0.00       9/2029        buildset [43]
+                0.00    0.00    2015/2029        main [1]
+[64]     0.0    0.00    0.00    2029         list_destroy [64]
+-----------------------------------------------
+                0.00    0.00       1/2027        index_create [90]
+                0.00    0.00      12/2027        http_parse_request [38]
+                0.00    0.00    2014/2027        index_addpath [2]
+[65]     0.0    0.00    0.00    2027         map_create [65]
+-----------------------------------------------
+                0.00    0.00       1/2026        send_results [95]
+                0.00    0.00       2/2026        run_query [28]
+                0.00    0.00       9/2026        buildset [43]
+                0.00    0.00    2014/2026        index_addpath [2]
+[66]     0.0    0.00    0.00    2026         list_size [66]
+-----------------------------------------------
+                0.00    0.00       1/197         http_parse_request [38]
+                0.00    0.00       4/197         html_escape [85]
+                0.00    0.00       6/197         http_parse_request_headers [39]
+                0.00    0.00       8/197         urldecode [77]
+                0.00    0.00      18/197         http_parse_request_line [80]
+                0.00    0.00     160/197         stripstring [68]
+[67]     0.0    0.00    0.00     197         newstring [67]
+-----------------------------------------------
+                0.00    0.00     160/160         splitstring [70]
+[68]     0.0    0.00    0.00     160         stripstring [68]
+                0.00    0.00     160/197         newstring [67]
+-----------------------------------------------
+                0.00    0.00      96/96          tokenize_query [48]
+[69]     0.0    0.00    0.00      96         is_reserved_char [69]
+-----------------------------------------------
+                0.00    0.00       1/80          http_parse_query [46]
+                0.00    0.00      79/80          http_parse_request_headers [39]
+[70]     0.0    0.00    0.00      80         splitstring [70]
+                0.00    0.00     160/160         stripstring [68]
+-----------------------------------------------
+                0.00    0.00      30/30          preprocess_query [47]
+[71]     0.0    0.00    0.00      30         is_reserved_word [71]
+-----------------------------------------------
+                0.00    0.00       5/24          parse_query <cycle 2> [54]
+                0.00    0.00       8/24          parse_andterm <cycle 2> [53]
+                0.00    0.00      11/24          parse_orterm <cycle 2> [52]
+[72]     0.0    0.00    0.00      24         list_peek [72]
+-----------------------------------------------
+                0.00    0.00       3/19          parse_query <cycle 2> [54]
+                0.00    0.00       3/19          parse_andterm <cycle 2> [53]
+                0.00    0.00       3/19          parse_orterm <cycle 2> [52]
+                0.00    0.00      10/19          parse_term <cycle 2> [51]
+[73]     0.0    0.00    0.00      19         newnode [73]
+-----------------------------------------------
+                0.00    0.00      16/16          tokenize_query [48]
+[74]     0.0    0.00    0.00      16         substring [74]
+-----------------------------------------------
+                0.00    0.00      10/10          get_documents_for_term [35]
+[75]     0.0    0.00    0.00      10         set_size [75]
+-----------------------------------------------
+                0.00    0.00       8/8           urldecode [77]
+[76]     0.0    0.00    0.00       8         hexdigit [76]
+-----------------------------------------------
+                0.00    0.00       2/8           http_parse_query [46]
+                0.00    0.00       6/8           handle_request [24]
+[77]     0.0    0.00    0.00       8         urldecode [77]
+                0.00    0.00       8/197         newstring [67]
+                0.00    0.00       8/8           hexdigit [76]
+-----------------------------------------------
+                0.00    0.00       2/6           handle_query [26]
+                0.00    0.00       4/6           handle_page [84]
+[78]     0.0    0.00    0.00       6         http_ok [78]
+-----------------------------------------------
+                0.00    0.00       6/6           handle_request [24]
+[79]     0.0    0.00    0.00       6         http_open_file_streams [79]
+-----------------------------------------------
+                0.00    0.00       6/6           http_parse_request [38]
+[80]     0.0    0.00    0.00       6         http_parse_request_line [80]
+                0.00    0.00      18/197         newstring [67]
+-----------------------------------------------
+                0.00    0.00       1/6           send_results [95]
+                0.00    0.00       1/6           run_query [28]
+                0.00    0.00       1/6           main [1]
+                0.00    0.00       1/6           parse [50]
+                0.00    0.00       2/6           preprocess_query [47]
+[81]     0.0    0.00    0.00       6         list_createiter [81]
+-----------------------------------------------
+                0.00    0.00       1/5           send_results [95]
+                0.00    0.00       1/5           run_query [28]
+                0.00    0.00       1/5           main [1]
+                0.00    0.00       2/5           preprocess_query [47]
+[82]     0.0    0.00    0.00       5         list_destroyiter [82]
+-----------------------------------------------
+                0.00    0.00       4/4           handle_page [84]
+[83]     0.0    0.00    0.00       4         get_mime_type [83]
+-----------------------------------------------
+                0.00    0.00       4/4           http_handler [25]
+[84]     0.0    0.00    0.00       4         handle_page [84]
+                0.00    0.00       4/4           is_valid_file [86]
+                0.00    0.00       4/4           get_mime_type [83]
+                0.00    0.00       4/6           http_ok [78]
+-----------------------------------------------
+                0.00    0.00       2/4           send_results [95]
+                0.00    0.00       2/4           print_querystring [88]
+[85]     0.0    0.00    0.00       4         html_escape [85]
+                0.00    0.00       4/197         newstring [67]
+-----------------------------------------------
+                0.00    0.00       4/4           handle_page [84]
+[86]     0.0    0.00    0.00       4         is_valid_file [86]
+-----------------------------------------------
+                0.00    0.00       4/4           parse_html_template [27]
+[87]     0.0    0.00    0.00       4         print_title [87]
+-----------------------------------------------
+                0.00    0.00       2/2           parse_html_template [27]
+[88]     0.0    0.00    0.00       2         print_querystring [88]
+                0.00    0.00       2/4           html_escape [85]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[89]     0.0    0.00    0.00       1         http_server [89]
+                0.00    0.00       1/1           setup_kill_signals [96]
+                0.00    0.00       1/1           open_socket [94]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[90]     0.0    0.00    0.00       1         index_create [90]
+                0.00    0.00       1/2027        map_create [65]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[91]     0.0    0.00    0.00       1         is_valid_directory [91]
+-----------------------------------------------
+                0.00    0.00       1/1           index_query [29]
+[92]     0.0    0.00    0.00       1         list_sort [92]
+                0.00    0.00       1/1           mergesort_ [93]
+-----------------------------------------------
+                0.00    0.00       1/1           list_sort [92]
+[93]     0.0    0.00    0.00       1         mergesort_ [93]
+-----------------------------------------------
+                0.00    0.00       1/1           http_server [89]
+[94]     0.0    0.00    0.00       1         open_socket [94]
+-----------------------------------------------
+                0.00    0.00       1/1           run_query [28]
+[95]     0.0    0.00    0.00       1         send_results [95]
+                0.00    0.00       2/4           html_escape [85]
+                0.00    0.00       2/2091        list_hasnext [61]
+                0.00    0.00       1/2026        list_size [66]
+                0.00    0.00       1/6           list_createiter [81]
+                0.00    0.00       1/2081        list_next [62]
+                0.00    0.00       1/5           list_destroyiter [82]
+-----------------------------------------------
+                0.00    0.00       1/1           http_server [89]
+[96]     0.0    0.00    0.00       1         setup_kill_signals [96]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [45] _find_files (common.c) [69] is_reserved_char (indexer.c) [54] parse_query (parser.c)
+  [21] addnode (aatreeset.c)  [71] is_reserved_word (indexer.c) [51] parse_term (parser.c)
+  [43] buildset (aatreeset.c) [91] is_valid_directory     [47] preprocess_query (indexer.c)
+  [44] buildtree (aatreeset.c) [86] is_valid_file         [88] print_querystring (indexer.c)
+   [5] compare_results_by_path [33] list_addfirst         [87] print_title (indexer.c)
+  [23] compare_strings        [31] list_addlast           [28] run_query (indexer.c)
+  [60] concatenate_strings    [63] list_create            [95] send_results (indexer.c)
+  [11] destroy_set_of_results [81] list_createiter         [3] set_add
+  [34] evaluate (index.c)     [64] list_destroy           [13] set_contains
+  [18] find_files             [82] list_destroyiter       [57] set_create
+   [9] freebuckets (hashmap.c) [61] list_hasnext          [58] set_createiter
+  [35] get_documents_for_term [62] list_next              [22] set_destroy
+  [83] get_mime_type (indexer.c) [72] list_peek           [59] set_destroyiter
+  [10] growmap (hashmap.c)    [19] list_popfirst          [42] set_difference
+  [84] handle_page (indexer.c) [66] list_size             [32] set_hasnext
+  [26] handle_query (indexer.c) [92] list_sort            [37] set_intersection
+  [16] hash_string            [65] map_create             [12] set_next
+  [76] hexdigit (httpd.c)     [36] map_destroy            [75] set_size
+  [85] html_escape            [14] map_get                [41] set_union
+  [25] http_handler (indexer.c) [7] map_haskey            [96] setup_kill_signals
+  [78] http_ok                [17] map_put                 [6] skew (aatreeset.c)
+  [79] http_open_file_streams (httpd.c) [93] mergesort_ (linkedlist.c) [30] split (aatreeset.c)
+  [46] http_parse_query (httpd.c) [56] newentry (hashmap.c) [70] splitstring (httpd.c)
+  [38] http_parse_request (httpd.c) [55] newnode (linkedlist.c) [68] stripstring (httpd.c)
+  [39] http_parse_request_headers (httpd.c) [20] newnode (aatreeset.c) [74] substring (indexer.c)
+  [80] http_parse_request_line (httpd.c) [73] newnode (parser.c) [15] tokenize_file
+  [89] http_server            [67] newstring (httpd.c)    [48] tokenize_query (indexer.c)
+   [2] index_addpath          [94] open_socket            [77] urldecode (httpd.c)
+  [90] index_create           [50] parse                   [8] <cycle 1>
+  [40] index_destroy          [53] parse_andterm (parser.c) [49] <cycle 2>
+  [29] index_query            [27] parse_html_template (indexer.c)
+   [4] insert (aatreeset.c)   [52] parse_orterm (parser.c)
